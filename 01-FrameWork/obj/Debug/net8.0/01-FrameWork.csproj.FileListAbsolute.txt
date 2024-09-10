@@ -1,0 +1,12 @@
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\bin\Debug\net8.0\01-FrameWork.deps.json
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\bin\Debug\net8.0\01-FrameWork.dll
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\bin\Debug\net8.0\01-FrameWork.pdb
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\obj\Debug\net8.0\01-FrameWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\obj\Debug\net8.0\01-FrameWork.AssemblyInfoInputs.cache
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\obj\Debug\net8.0\01-FrameWork.AssemblyInfo.cs
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\obj\Debug\net8.0\01-FrameWork.csproj.CoreCompileInputs.cache
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\obj\Debug\net8.0\01-FrameWork.dll
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\obj\Debug\net8.0\refint\01-FrameWork.dll
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\obj\Debug\net8.0\01-FrameWork.pdb
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\obj\Debug\net8.0\ref\01-FrameWork.dll
+C:\Users\bahrami\source\repos\BehinQueryApp\01-FrameWork\obj\Debug\net8.0\01-FrameWork.csproj.AssemblyReference.cache

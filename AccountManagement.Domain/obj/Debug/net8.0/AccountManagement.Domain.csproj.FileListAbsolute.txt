@@ -1,0 +1,15 @@
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\AccountManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\AccountManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\AccountManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\AccountManagement.Domain.AssemblyInfo.cs
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\AccountManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\bin\Debug\net8.0\AccountManagement.Domain.deps.json
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\bin\Debug\net8.0\AccountManagement.Domain.dll
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\bin\Debug\net8.0\AccountManagement.Domain.pdb
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\bin\Debug\net8.0\01-FrameWork.dll
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\bin\Debug\net8.0\01-FrameWork.pdb
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\AccountM.6F3EE75A.Up2Date
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\AccountManagement.Domain.dll
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\refint\AccountManagement.Domain.dll
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\AccountManagement.Domain.pdb
+C:\Users\bahrami\source\repos\BehinQueryApp\AccountManagement.Domain\obj\Debug\net8.0\ref\AccountManagement.Domain.dll

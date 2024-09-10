@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "رشته اتصال";
+    Layout = "_HomeLayout";
+
+}
+
+
+<div class="page main-signin-wrapper bg-primary construction">
+
+    <div class="container ">
+        <div class="construction1 text-center details text-white">
+          
+            <img src="https://www.behinafzar.ir/Images/New%20image/logo_2_50.png" class="mb-5" alt="logo">
+            <h4 class="text-center text-white tx-30 font-weight-bold ">اجرای مستقیم Query روی دیتابیس !</h4>
+            <p class="text-white-50 tx-15">لطفا در ورودی زیر یک کانکشن استرینگ وارد کنید و سپس روی بزن بریم کلیک کنید .</p>
+            <form method="post" role="form">
+                <input style="direction: initial;" name="ConnectionString" type="text" class="form-control border-left-0 pr-3" placeholder="Connection String.....">
+
+                <button class="btn ripple alert alert-primary btn-lg btn-block" style=" background-color: #d6e0ff;margin-bottom:12%;margin-top:2%">بزن بریم</button>
+
+            </form>
+
+
+
+        </div>
+        <div class="text-center">Query Excuted<a class="text-white-50"> BehinAfzarCV </a>AmirKharazi</div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+﻿
+@model dynamic
+@{
+    int number = 0;
+    
+}
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">نتایج</h4>
+</div>
+<div class="modal-body">
+    @if (Model is List<string> modelList)
+    {
+        <div class="text-wrap">
+            <div class="example">
+                <div>
+                    <div class="list-group">
+                        @foreach (var item in modelList)
+                        {
+                            <a style="background-color: beige;" class="list-group-item list-group-item-action">
+                                <p id="sqlContainer" class="mb-1" style="text-align:end">
+                                    @Html.Raw(item) 
+                                </p>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p style="color:darkred; text-align:right;font-weight: bold">@Model</p>
+    }
+</div>  
+                            
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+</div>

@@ -1,0 +1,24 @@
+﻿@model BehinQueryApp.Service.QueyCommand.ViewModel.GetAll_QueryCommand_Query
+
+ <div class="modal-header" style="direction:initial">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">افزودن Query جدید</h4>
+</div>
+
+<form>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <label class="control-label">Query</label>
+                <textarea id="sqlInput" rows="10" cols="50" style="font-weight:bold;direction:ltr;color:darkblue" asp-for="QueryCmd" disabled class="form-control">
+                </textarea>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+    </div>
+</form> 

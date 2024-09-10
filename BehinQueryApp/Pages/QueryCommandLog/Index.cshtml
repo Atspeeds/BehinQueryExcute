@@ -1,0 +1,113 @@
+﻿@page
+@model BehinQueryApp.Pages.QueryCommandLog.IndexModel
+@using _01_FrameWork;
+@{
+    
+    ViewData["PanelTitle"] = "Query ها";
+}
+<div class="page-header">
+    <div>
+        <h2 class="main-content-title tx-24 mg-b-5">@ViewData["Admintitle"]</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">لاگ ها</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@ViewData["Admintitle"]</li>
+        </ol>
+    </div>
+
+   
+
+</div>
+
+
+<!-- Row Serch With SerchModel -->
+<div class="row row-sm">
+    <div class="col-lg-12 col-md-12">
+        <div class="card custom-card">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">
+                        جستجو پیشرفته !
+                    </h6>
+                    <p class="text-muted card-sub-title">بر اساس این جستجو شما میتوانید برا اساس آیتم ها Query  خود را بیابید .</p>
+                </div>
+                <form method="get" role="form">
+                    <div class="row row-sm">
+                        <div class="col-lg">
+                            <input name="search.UserName" class="form-control" placeholder="Query" type="text">
+                        </div>
+
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-lg btn-block ripple btn-primary btn-with-icon">جستجو <i class="fe fe-search"></i></button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row row-sm">
+    <div class="col-lg-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">جدول داده اصلی</h6>
+                    <p class="text-muted card-sub-title">همانطور که در این مثال نشان داده شده است ، جستجو ، سفارش و صفحه بندی خوب بلافاصله به جدول اضافه می شود.</p>
+                </div>
+                <div class="table-responsive">
+                    <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class="table dataTable no-footer" id="example1" role="grid" aria-describedby="example1_info">
+                                    <thead>
+                                        <tr role="row">
+
+                                            <th class="wd-25p sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="موقعیت: activate to sort column ascending" style="width: 189.5px;">
+                                                #
+                                            </th>
+
+                                            <th class="wd-20p sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="دفتر: activate to sort column ascending" style="width: 143.391px;">
+                                                نام
+                                            </th>
+
+                                            
+                                            <th class="wd-20p sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="دفتر: activate to sort column ascending" style="width: 143.391px;">
+                                                تاریخ
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.QueryCommandLog)
+                                        {
+
+                                            <tr role="row" class="odd">
+                                                <td class="id">@item.Id</td>
+
+
+
+                                                <td style="direction: ltr;">@item.UserName</td>
+
+                                                <td style="direction: ltr;">@item.ExcuteQuery</td>
+
+                                               
+                                                
+                                            </tr>
+
+                                        }
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

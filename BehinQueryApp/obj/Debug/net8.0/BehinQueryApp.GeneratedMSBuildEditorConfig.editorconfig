@@ -1,0 +1,111 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BehinQueryApp
+build_property.RootNamespace = BehinQueryApp
+build_property.ProjectDir = C:\Users\bahrami\source\repos\BehinQueryApp\BehinQueryApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\bahrami\source\repos\BehinQueryApp\BehinQueryApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Accounts/Signing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcU2lnbmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Accounts/SignOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcU2lnbk91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Accounts/signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcc2lnbnVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/QueryCommandLog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlcnlDb21tYW5kTG9nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/QueryCommand/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlcnlDb21tYW5kXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/QueryCommand/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlcnlDb21tYW5kXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/QueryCommand/ExcuteResualt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlcnlDb21tYW5kXEV4Y3V0ZVJlc3VhbHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/QueryCommand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlcnlDb21tYW5kXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/QueryCommand/ViewAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlcnlDb21tYW5kXFZpZXdBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Shared/_AccountLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BY2NvdW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Shared/_HomeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Ib21lTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Shared/_Js.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Kcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Shared/_Menue.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9NZW51ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Shared/_Style.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TdHlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahrami/source/repos/BehinQueryApp/BehinQueryApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pzdwveqrcb

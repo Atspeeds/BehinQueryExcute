@@ -1,0 +1,14 @@
+﻿.sql-keyword {
+    color: blue;
+    font-weight: bold;
+}
+
+.sql-function {
+    color: green;
+    font-weight: bold;
+}
+
+.sql-error {
+    color: red;
+    font-weight: bold;
+}
