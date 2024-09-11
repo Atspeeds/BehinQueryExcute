@@ -20,15 +20,14 @@ namespace BehinQueryApp.Service
         public QueryCmdAdo(IQueryCommandSession queryCommandSession)
         {
             _queryCommandSession = queryCommandSession;
-            Connection = _queryCommandSession.GetConnectionString();
         }
         public List<string> GetTableName()
         {
 			try
 			{
 				List<string> tableNames = new List<string>();
-				var connections = Connection;
-				using (SqlConnection connection = new SqlConnection(connections))
+				var connections = _queryCommandSession.GetConnectionString();
+                using (SqlConnection connection = new SqlConnection(connections))
 				{
 					connection.Open();
 

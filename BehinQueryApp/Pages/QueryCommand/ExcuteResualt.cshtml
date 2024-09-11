@@ -1,39 +1,72 @@
-﻿
-@model dynamic
+﻿@model dynamic
 @{
-    int number = 0;
-    
 }
-<div class="modal-header">
+<div class="modal-header" style="direction:initial">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h4 class="modal-title">نتایج</h4>
+    <h4 class="modal-title">Queryنتایج</h4>
 </div>
-<div class="modal-body">
-    @if (Model is List<string> modelList)
-    {
-        <div class="text-wrap">
-            <div class="example">
-                <div>
-                    <div class="list-group">
-                        @foreach (var item in modelList)
-                        {
-                            <a style="background-color: beige;" class="list-group-item list-group-item-action">
-                                <p id="sqlContainer" class="mb-1" style="text-align:end">
-                                    @Html.Raw(item) 
-                                </p>
-                            </a>
-                        }
+
+<div class="row row-sm">
+    <div class="col-lg-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <div class="main-content-label mg-b-5">
+                            Query فعال
+                        </div>
+                        <form id="editForm" asp-page="./Index" asp-page-handler="ExcuteEdit"
+                              role="form"
+                              method="post"
+                              enctype="multipart/form-data">
+                            <div class="row row-sm">
+                                <div class="col-lg">
+                                    <input name="querycmd" class="form-control" value="@Model.QueryCmd" type="text">
+                                </div>
+                            </div>
+                            <br />
+                            <button type="submit" class="btn ripple btn-info btn-rounded btn-with-icon">ویرایش <i class="fe fe-excute"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="table-responsive" style="max-height:400px;overflow:auto;">
+                    <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                        <div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="example1_length"><label><select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> موارد/صفحه</label></div></div><div class="col-sm-12 col-md-6"><div id="example1_filter" class="dataTables_filter"><label><input type="search" class="form-control form-control-sm" placeholder="جستجو کردن..." aria-controls="example1"></label></div></div></div><div class="row">
+                            <div class="col-sm-12">
+                                <table class="table dataTable no-footer" id="example1" role="grid" aria-describedby="example1_info">
+                                    <thead>
+
+                                        <tr role="row">
+                                            @foreach (var columnName in Model.ColumnNames)
+                                            {
+                                                <th class="wd-20p sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" activate to sort column ascending" style="width: 143.391px;">
+                                                    @columnName
+                                                </th>
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var row in Model.Data)
+                                        {
+                                            <tr role="row" class="odd">
+                                                @foreach (var columnName in Model.ColumnNames)
+                                                {
+                                                    <td>@row[columnName]</td>
+                                                }
+                                            </tr>
+                                        }
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">نمایش دادن 1 به 10 از 57 ورودی های</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="example1_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="example1_previous"><a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="example1" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="example1_next"><a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0" class="page-link">بعدی</a></li></ul></div></div></div>
                     </div>
                 </div>
             </div>
         </div>
-    }
-    else
-    {
-        <p style="color:darkred; text-align:right;font-weight: bold">@Model</p>
-    }
-</div>  
-                            
-<div class="modal-footer">
-    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+    </div>
 </div>

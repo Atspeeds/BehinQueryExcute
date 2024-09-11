@@ -15,15 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Am.Application", "Am.Applic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AM.Infrastrure", "AM.Infrastrure", "{1151BB39-EAA3-4E16-9583-D77E3674BF27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Domain", "AccountManagement.Domain\AccountManagement.Domain.csproj", "{AC525F8F-2A7B-4475-B967-4973677CB8B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Domain", "AccountManagement.Domain\AccountManagement.Domain.csproj", "{AC525F8F-2A7B-4475-B967-4973677CB8B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Application", "AccountManagement.Application\AccountManagement.Application.csproj", "{17F5B6DE-5AFE-4A56-A5F1-3488290804A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Application", "AccountManagement.Application\AccountManagement.Application.csproj", "{17F5B6DE-5AFE-4A56-A5F1-3488290804A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Application.Contract", "AccountManagement.Application.Contract\AccountManagement.Application.Contract.csproj", "{A4FDEC0E-56CE-434C-8D0C-057C0ECE7A0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Application.Contract", "AccountManagement.Application.Contract\AccountManagement.Application.Contract.csproj", "{A4FDEC0E-56CE-434C-8D0C-057C0ECE7A0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Infrastrure", "AccountManagement.Infrastrure\AccountManagement.Infrastrure.csproj", "{62E37795-9444-41B4-9A8B-0A352CDC5B11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Infrastrure", "AccountManagement.Infrastrure\AccountManagement.Infrastrure.csproj", "{62E37795-9444-41B4-9A8B-0A352CDC5B11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Infrastrure.Bootstrapper", "AccountManagement.Infrastrure.Bootstrapper\AccountManagement.Infrastrure.Bootstrapper.csproj", "{261AAEB2-0611-4A20-A507-6E594CA3ACAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Infrastrure.Bootstrapper", "AccountManagement.Infrastrure.Bootstrapper\AccountManagement.Infrastrure.Bootstrapper.csproj", "{261AAEB2-0611-4A20-A507-6E594CA3ACAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BehinQueryApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77b85de88dea11fdeeb23d5680cbe918eda880a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("BehinQueryApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BehinQueryApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

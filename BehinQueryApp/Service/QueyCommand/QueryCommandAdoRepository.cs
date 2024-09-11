@@ -28,65 +28,75 @@ namespace BehinQueryApp.Service.QueyCommand
 
 		public async Task<dynamic> ExecuteQueryAsync(long id)
 		{
-			var query = new QueryCommand();
+			string columnName = null;
+			var query = await _queryCommandRepository.GetByAsync(id);
 
-			query = _queryCommandRepository.GetByAsync(id).Result;
-
-			await _queryCommandLogRepository.SetLog(new
-				 QueyCommandLog.ViewModel.Create_QueryCommandLog_Command()
+			await _queryCommandLogRepository.SetLog(new QueyCommandLog.ViewModel.Create_QueryCommandLog_Command()
 			{
 				UserName = _authHelper.GetCurrentUserInfo().FullName,
 				Command = query.QueryCmd
 			});
 
-
 			if (!query.IsActive)
-				return await Task.FromResult(MessageQueryCmd.QueryNotExcute);
-
-
+				return MessageQueryCmd.QueryNotExcute;
 
 			try
 			{
 				using (SqlConnection connection = new SqlConnection(Connection))
 				{
-					connection.Open();
+					await connection.OpenAsync();
 					using (SqlCommand command = new SqlCommand(query.QueryCmd, connection))
 					{
-
-						var res = command.ExecuteReader();
-						if (query.QueryCmd.ToUpper().Contains("SELECT"))
+						using (var res = await command.ExecuteReaderAsync())
 						{
+							var results = new List<Dictionary<string, object>>();
+							var columnNames = new List<string>();
 
-
-							List<string> selectList = new List<string>();
-							while (res.Read())
+							// ذخیره نام ستون‌ها
+							for (int i = 0; i < res.FieldCount; i++)
 							{
-
-
-								selectList.Add(SqlFormatter.Format(String.Format("{0}", res[1])).Replace("\n", "<br/>"));
-
-
+								columnNames.Add(res.GetName(i));
 							}
-							return selectList;
+
+							while (await res.ReadAsync())
+							{
+								var row = new Dictionary<string, object>();
+
+								// اگر نام ستونی مشخص شده باشد
+								if (!string.IsNullOrEmpty(columnName))
+								{
+									// فقط آن ستون خاص را اضافه کن
+									if (res.GetOrdinal(columnName) >= 0)
+									{
+										row[columnName] = res[columnName];
+									}
+								}
+								else
+								{
+									// اگر هیچ ستونی مشخص نشده باشد، تمام ستون‌ها را اضافه کن
+									for (int i = 0; i < res.FieldCount; i++)
+									{
+										row[res.GetName(i)] = res[i];
+									}
+								}
+
+								results.Add(row);
+							}
+
+							return new { ColumnNames = columnNames, Data = results, QueryCmd = query.QueryCmd };
 						}
-
-
-						return res;
 					}
 				}
 			}
 			catch (SqlException ex)
 			{
-
 				return $"SQL Error: {ex.Message}";
 			}
 			catch (Exception ex)
 			{
-
 				return $"Error: {ex.Message}";
 			}
 		}
-
 
 		public List<string> GetTableNames()
 		{
@@ -109,6 +119,73 @@ namespace BehinQueryApp.Service.QueyCommand
 			return tableNames;
 		}
 
-	}
+        public async Task<dynamic> ExecuteQueryAsync(string querycmd)
+        {
+            string columnName = null;
+            var query = querycmd;
+
+            await _queryCommandLogRepository.SetLog(new QueyCommandLog.ViewModel.Create_QueryCommandLog_Command()
+            {
+                UserName = _authHelper.GetCurrentUserInfo().FullName,
+                Command = querycmd
+            });
+
+           
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(Connection))
+                {
+                    await connection.OpenAsync();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (var res = await command.ExecuteReaderAsync())
+                        {
+                            var results = new List<Dictionary<string, object>>();
+                            var columnNames = new List<string>();
+
+                            // ذخیره نام ستون‌ها
+                            for (int i = 0; i < res.FieldCount; i++)
+                            {
+                                columnNames.Add(res.GetName(i));
+                            }
+
+                            while (await res.ReadAsync())
+                            {
+                                var row = new Dictionary<string, object>();
+
+                                if (!string.IsNullOrEmpty(columnName))
+                                {
+                                    if (res.GetOrdinal(columnName) >= 0)
+                                    {
+                                        row[columnName] = res[columnName];
+                                    }
+                                }
+                                else
+                                {
+                                    for (int i = 0; i < res.FieldCount; i++)
+                                    {
+                                        row[res.GetName(i)] = res[i];
+                                    }
+                                }
+
+                                results.Add(row);
+                            }
+
+                            return new { ColumnNames = columnNames, Data = results, QueryCmd = query };
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                return $"SQL Error: {ex.Message}";
+            }
+            catch (Exception ex)
+            {
+                return $"Error: {ex.Message}";
+            }
+        }
+    }
 }
 

@@ -3,15 +3,15 @@
 @model BehinQueryApp.Pages.QueryCommand.IndexModel
 @using _01_FrameWork;
 @{
-    
+
     ViewData["PanelTitle"] = "Query ها";
 }
 <div class="page-header">
     <div>
         <h2 class="main-content-title tx-24 mg-b-5">@ViewData["Admintitle"]</h2>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">خانه</a></li>
-            <li class="breadcrumb-item active" aria-current="page">@ViewData["Admintitle"]</li>
+            <li class="breadcrumb-item"><a href="/">خانه</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@ViewData["PanelTitle"]</li>
         </ol>
     </div>
     <div class="row">
@@ -25,7 +25,7 @@
             <span style="font:bold">@_session.GetConnectionString()</span>
         </div>
     </div>
-   
+
     <div class="d-flex">
         <div class="justify-content-center">
 
@@ -109,13 +109,13 @@
 
                                                 <td style="direction: ltr;">@item.QueryCmd.ShortenString(25)</td>
 
-                                        
+
                                                 @if (item.IsActive)
                                                 {
                                                     <td>
                                                         <i class="fe fe-check" data-toggle="tooltip" title="" data-bs-original-title="fe fe-check" aria-label="fe fe-check" style="font-size: x-large;font-weight: bold;color: chartreuse;"></i>
                                                     </td>
-                                                    
+
                                                 }
                                                 else
                                                 {
@@ -137,11 +137,11 @@
 
 
                                                     }
-                                                    <a href="#showmodal=@Url.Page("./Index", "Execute",new { id = item.Id })" class="btn ripple btn-info btn-rounded"> اجرا</a>
+                                                    <a href="#showmodal=@Url.Page("./Index", "Execute",new { id = item.Id,querycmd=item.QueryCmd })" class="btn ripple btn-info btn-rounded"> اجرا</a>
                                                 </td>
 
-                                               
-                                                
+
+
                                             </tr>
 
                                         }

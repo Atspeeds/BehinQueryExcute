@@ -163,3 +163,4 @@ C:\Users\bahrami\source\repos\BehinQueryApp\BehinQueryApp\bin\Debug\net8.0\Accou
 C:\Users\bahrami\source\repos\BehinQueryApp\BehinQueryApp\bin\Debug\net8.0\AccountManagement.Application.Contract.pdb
 C:\Users\bahrami\source\repos\BehinQueryApp\BehinQueryApp\bin\Debug\net8.0\AccountManagement.Domain.pdb
 C:\Users\bahrami\source\repos\BehinQueryApp\BehinQueryApp\bin\Debug\net8.0\AccountManagement.Infrastrure.pdb
+C:\Users\bahrami\source\repos\BehinQueryApp\BehinQueryApp\obj\Debug\net8.0\BehinQueryApp.sourcelink.json
